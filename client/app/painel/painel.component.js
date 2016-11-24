@@ -13,7 +13,17 @@ var PainelComponent = (function () {
     function PainelComponent() {
         //tipagem de dados, não permite algo como abaixo
         //this.titulo=10;
+        //this.titulo = 
+        //this.titulo.length>7 ? 
+        //this.titulo.substr(0,7)+"..." : 
+        //this.titulo;
     }
+    PainelComponent.prototype.ngOnInit = function () {
+        this.titulo =
+            this.titulo.length > 7 ?
+                this.titulo.substr(0, 7) + " ..." :
+                this.titulo;
+    };
     __decorate([
         core_1.Input(), 
         __metadata('design:type', String)
